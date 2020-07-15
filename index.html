@@ -1,28 +1,184 @@
 <!DOCTYPE html>
 <html lang=fr dir="ltr">
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/css/style.css"/> 
-    <title>Exercice Violette et Lilas</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8"/>
+  <!-- meta name pour le responsive-->
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <!--pour relier feuille de style.css-->
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <title>Exercice Violette et Lilas</title>
+</head>
+<body>
+  <!-- le body represente tout le corps de ma page web-->
+  <header>
+    <!-- l'header est l'en-tête principal-->
     <nav>
-      <ul>
+      <!-- création d'une barre de navigation "généralement situé dans len-tête principal"-->
+      <!--création du menu via une liste desordonnée (car pas numéroté)-->
+      <ul class="topnav">
+        <li><img id="logoblack" src="assets/img/icone_logonoir.png" title="icone_logonoir" alt="icone_logonoir"</li>
+        <li><a href="#" id="titlenav">Violette & Lilas</a></li>
         <li><a href="#">Fleurs</a></li>
-      </ul>
-      <ul>
         <li><a href="#">Bouquets</a></li>
-      </ul>
-      <ul>
         <li><a href="#">Compositions</a></li>
-      </ul>
-      <ul>
         <li><a href="#">Boutique</a></li>
-      </ul>
-      <ul>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
-  </body>
-</html>
+  </header>
+  <!-- le main represente mon contenu principal, celui contient des articles...-->
+  <main>
+    <!-- Ajout div logo-->
+    <div class="logobody">
+      <img id="logogreen" src="assets/img/icone_logo.png" title="icone_logo" alt="icone_logo"/>
+    </div>
+    <!-- Ajout div encadrer rose-->
+    <div class="blockpink">
+      <h1>Violette & Lilas</h1>
+      <p>La boutique Violette & Lilas vous accueille à Thourotte près de Compiègne , dans le département de l'Oise. Les deux sœurs Violette et
+        Lila mettent à votre disposition leurs compétences professionnelles pour répondre au mieux à vos besoins. Ces artistes de la fleur vous
+        conseillent dans le choix de vos fleurs et de vos plantes.<br><br>
+        La boutique Violette & Lila est ouverte du lundi au samedi, ainsi que le dimanche pour toutes les Fêtes à Fleurs : Fête des mères,
+        Toussaint, Noël, Nouvel An, Fête des Grand-Mères, Saint-Valentin, Les Rameaux, Pâques…<br><br>
+        A bientôt dans notre boutique.</p>
+      </div>
+      <!-- Ajout div section produits remière ligne-->
+      <div id="blockLine">  <!-- div principale regroupement les autres blocs div-->
+        <div class="block">
+          <img src="assets/img/bouquet.png" class="bouquet" alt="bouquet">
+          <h2>Anniversaire</h2>
+          <p>Parlez avec des fleurs pour exprimer vos sentiments et vos émotions…</p>
+          <a href="#"class="link">Découvrir nos fleurs</a>
+        </div>
+        <div class="block">
+          <img src="assets/img/bouquetmariage.jpg" class="bouquet" alt="bouquet mariage">
+          <h2>Mariage</h2>
+          <p>Fleurissez votre mariage, habillez vos tables de mariage, décorez votre salle des fêtes…</p>
+          <a href="#"class="link">Découvrir nos bouquets</a>
+        </div>
+        <div class="block">
+          <img src="assets/img/deces.jpg" class="bouquet" alt="bouquet décès">
+          <h2>Décès</h2>
+          <p>Exprimez vos sincères condoléances et vos émotions avec des fleurs de deuil…</p>
+          <a href="#"class="link">Découvrir nos compositions</a>
+        </div>
+      </div>
+      <!--creation d'une seconde ligne div-->
+      <div id="blockLine2">  <!-- div secondaire regroupement les autres blocs div-->
+        <div class="block">
+          <img src="assets/img/rosesrouge.jpeg" class="bouquet" alt="des roses rouges ">
+          <h2>Saint Valentin</h2>
+          <p>Parlez avec des fleurs pour exprimer vos sentiments et vos émotions…</p>
+          <a href="#"class="link">Découvrir nos bouquets</a>
+        </div>
+        <div class="block">
+          <img src="assets/img/fetedesmeres.jpeg" class="bouquet" alt="des roses rouges ">
+          <h2>Fêtes des mères</h2>
+          <p>Surprenez votre maman en lui offrant une composition originale…</p>
+          <a href="#"class="link">Découvrir nos compositions</a>
+        </div>
+        <div class="block">
+          <img src="assets/img/couronnenoel.PNG" class="bouquet" alt="couronne fleurs noel ">
+          <h2>Noël</h2>
+          <p>Décorez votre porte, votre table avec des fleurs et vivez la magie de Noël…</p>
+          <a href="#"class="link">Découvrir nos fleurs</a>
+        </div>
+      </div>
+      <!--creation d'une troisième ligne div-->
+      <div id="blockLine3">  <!-- div regroupent 2 blocs div-->
+        <div class="block2">
+          <h2>Service de livraison</h2>
+          <img src="assets/img/vehicule.png" class="camion" alt="vehicule">
+          <p>Votre fleuriste Violette & Lilas vous propose désormais
+            un service de livraison dans le secteur du Compiégnois.<br></br>
+            Commandez votre bouquet ou composition florale sur
+            notre site ou directement en boutique et retrouvez Violette
+            qui assure avec soin la livraison de vos commandes.<br><br>
+            Pour en savoir plus sur les villes desservies et les
+            conditions de livraison <a href="#"class="link">cliquez ici.</a></p>
+          </div>
+          <div class="block3">
+            <h2>Cours d'art floral</h2>
+            <img src="assets/img/artsfloral.png" class="artsflowers" id="imgrotate"alt="arts floral">
+            <p class="art">Votre fleuriste Violette & Lilas vous propose désormais des
+              cours d'art floral.<br></br>
+              Retrouvez Lila tous les mercredis après-midi de 14h à 16h
+              pour apprendre à réaliser de jolies compositions florales
+              avec des fleurs de saison. Vous découvrirez ainsi le langage
+              des fleurs tout au long de l'année <br></br> <a href="#"class="link">Informations et inscriptions.</a></p>
+            </div>
+            <!--creation d'un formulaire-->
+          </div>
+          <form action="#" method="post">
+            <!--Cette partie concerne la premiere partie identité du formulaire-->
+            <fieldset class="identityInfo">
+              <ul>
+                <li>
+                  <p class="titleform">Comment nous contacter ?</p>
+                  <label for="name">Nom :</label><br>
+                  <input type="text" id="name" name="name" class="champs"/>
+                </li>
+                <li>
+                  <label for="mail">Email :</label><br>
+                  <input type="text" id="firstname" name="firstname"class="champs"/>
+                </li>
+                <li>
+                  <label for="sujectselec">Sujet :</label><br>
+                  <!--<input type="text"  placeholder="choisir un sujet..." class="champs" name="" value="">-->
+                  <select name="sujet" placeholder="Choisir un sujet" class="champs">
+                    <option value="">sujet 1 </option>
+                    <option value="">sujet 2  </option>
+                    <option value="">sujet 3  </option>
+                  </select>
+                </li>
+                <li>
+                  <label for="message">Message :</label><br>
+                  <textarea name="Message" id="message" class="champs" ></textarea>
+                </li>
+                <li>
+                  <input type="submit" disabled="disabled" value="Envoyer" id="button"/>
+                  <!--disabled permet de desactivé le bouton envoyé-->
+                </li>
+              </ul>
+              <div class="textform">
+                <p id="pform">Vous avez une question concernant la boutique, la livraison ou les cours<br>
+                  d'art floral ?<br>
+                  Nous sommes là pour vous répondre.<br><br>
+                  Vous avez une remarque ?<br>
+                  Nous sommes là pour l'écouter.<br><br>
+                  Vous avez une suggestion ? <br>
+                  Nous sommes là pour la prendre en considération.<br><br>
+                  Nous serons heureuses de répondre à vos messages, alors n'hésitez pas <br>
+                  à nous contacter</p>
+                </div>
+              </fieldset>
+            </main>
+            <!--creation d'un pied de page-->
+            <footer>
+              <div class="contactInfo">
+                <div class="Adress1">
+                  <h2 class="title1">Adresse :</h2>
+                  <p class="footcontact">84 Rue du Général De <br> Gaulle<br>
+                    60150 Thourotte <br><br>
+                    Tél : 03 44 84 12 78 <br>
+                    Fax : 03 44 84 14 76 </p>
+                  </div>
+                  <div class="logocontact">
+                    <img id="logocont" src="assets/img/icone_logonoir.png" title="icone_logonoir" alt="icone_logonoir"/>
+                  </div>
+                  <div class="Adress2">
+                    <h2 class="title1">Horaires :</h2>
+                    <p class="footcontact">Le lundi<br>
+                      de 14h à 19h15<br><br>
+                      Du mardi au samedi<br>
+                      de 8h45 à 19h15<br><br>
+                      Le dimanche<br>
+                      de 9h à 12h30</p>
+                    </div>
+                  </div>
+                  <div class="mention">
+                    <p id="footB">Mentions légales - Politique de confidentialité - Plan du site</p>
+                  </div>
+                </footer>
+              </body>
+              </html>
