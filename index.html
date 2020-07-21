@@ -9,11 +9,11 @@
   <title>Exercice Violette et Lilas</title>
 </head>
 <body>
-  <!-- le body represente tout le corps de ma page web-->
+  <!-- le body représente tout le corps de ma page web-->
   <header>
     <!-- l'header est l'en-tête principal-->
     <nav>
-      <!-- création d'une barre de navigation "généralement situé dans len-tête principal"-->
+      <!-- création d'une barre de navigation "généralement situé dans l'en-tête principal"-->
       <!--création du menu via une liste desordonnée (car pas numéroté)-->
       <ul class="topnav">
         <li><img id="logoblack" src="assets/img/icone_logonoir.png" title="icone_logonoir" alt="icone_logonoir"</li>
@@ -23,6 +23,8 @@
         <li><a href="#">Compositions</a></li>
         <li><a href="#">Boutique</a></li>
         <li><a href="#">Contact</a></li>
+        <!--création d'un menu burger à utiliser en responsive-->
+        <li class="icon"><a href="#" onclick="myFunction()" id="menuBurgerIcon">&#9776;</a></li>
       </ul>
     </nav>
   </header>
@@ -168,7 +170,7 @@
                   </div>
                   <div class="Adress2">
                     <h2 class="title1">Horaires :</h2>
-                    <p class="footcontact">Le lundi<br>
+                    <p class="footcontact" id="footinfo">Le lundi<br>
                       de 14h à 19h15<br><br>
                       Du mardi au samedi<br>
                       de 8h45 à 19h15<br><br>
