@@ -301,10 +301,13 @@ textarea {
 /*................. Media queries ..................*/
 
 /* Pour une largeur d'écran inférieure à 992px la ligne de bloc ne sera pas alignée horizontalement mais verticalement */
-@media all and (max-width: 300px)
+@media screen and (min-width: 300px) and (max-width: 900px)
 {
   body {
-    margin: 0px;
+    width: 100%;
+    margin: auto;
+    /*margin: 0px;*/
+    /*padding: 0px;*/
   }
   header {
     background-color: #8DAA91;
